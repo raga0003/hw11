@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 2000,
+  "data": {
+    "url": "https://raw.githubusercontent.com/raga0003/fit3179/main/Assignment_2/final_data/stack.csv"
+  },
+  "mark": {"type": "bar", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3},
+  "encoding": {
+    "x": {
+      "aggregate": "average",
+      "field": "Value",
+      "type": "quantitative",
+      "stack": "zero"
+    },
+    "y": {"field": "Country", "type": "nominal"},
+    "color": {"field": "Factor", "type": "nominal"}
+  },
+  "config": {}
+}
